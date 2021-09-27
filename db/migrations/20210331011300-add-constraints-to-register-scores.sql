@@ -1,0 +1,12 @@
+BEGIN;
+ALTER TABLE register 
+ALTER COLUMN athlete_id SET NOT NULL;
+ALTER TABLE register 
+ALTER COLUMN competition_id SET NOT NULL;
+
+ALTER TABLE scores 
+ALTER COLUMN event_id SET NOT NULL;
+ALTER TABLE scores 
+ALTER COLUMN athlete_id SET NOT NULL;
+
+COMMIT;

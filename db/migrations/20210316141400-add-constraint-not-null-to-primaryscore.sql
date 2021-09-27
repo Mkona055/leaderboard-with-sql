@@ -1,0 +1,5 @@
+
+BEGIN;
+ALTER TABLE events 
+ALTER COLUMN primary_score SET NOT NULL;
+COMMIT;
